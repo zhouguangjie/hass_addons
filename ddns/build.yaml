@@ -1,0 +1,14 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+build_from:
+  aarch64: "ghcr.io/home-assistant/aarch64-base:3.15"
+  amd64: "ghcr.io/home-assistant/amd64-base:3.15"
+  armhf: "ghcr.io/home-assistant/armhf-base:3.15"
+  armv7: "ghcr.io/home-assistant/armv7-base:3.15"
+  i386: "ghcr.io/home-assistant/i386-base:3.15"
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: DDNS"
+  org.opencontainers.image.description: "自动更新 DNS 解析 到本机 IP 地址,支持 ipv4 和 ipv6 以 本地(内网)IP 和 公网 IP。 代理模式,支持自动创建域名记录。"
+  org.opencontainers.image.source: "https://github.com/zhouguangjie/hass_addons"
+  org.opencontainers.image.licenses: "Apache License 2.0"
+args:
+  TEMPIO_VERSION: "2023.05.31"
