@@ -1,0 +1,36 @@
+name: "Hello world"
+description: "My first real add-on!"
+version: "1.0.0"
+slug: "hello_world"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+
+options:
+  id: null
+  token: null
+  dns: dnspod
+  ipv4: null
+  ipv6: null
+  index4: default
+  index6: default
+  ttl: null
+  proxy: null
+  debug: false
+  cache: true
+schema:
+  id: str
+  token: str
+  dns: str
+  ipv4: str?
+  ipv6: str?
+  index4: str?
+  index6: str?
+  ttl: int
+  proxy: str?
+  debug: bool
+  cache: bool
