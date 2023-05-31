@@ -1,6 +1,6 @@
 name: "DDNS"
 description: "update dns with local machine ips"
-version: "0.1.5"
+version: "0.1.8"
 slug: "ddns"
 init: false
 arch:
